@@ -1,0 +1,99 @@
+ <div class="card-top container-fluid">
+     <div class="container d-flex">
+         <div class="item">
+            <a>
+                <img  class="circle-link" src="/assets/Images/myntra-la-la.png?q=100">
+                <h6>All Products</h6>
+            </a>
+         </div>
+         <div class="item">
+          <a>
+            <img class="circle-link" style="width: 62px; margin-top: 5px;" src="/assets/Images/Mental-Strong-Women-min.png?q=100">
+            <h6>Women</h6>
+          </a>
+        </div>
+        <div class="item">
+          <a>
+            <img  class="circle-link" style="width: 80px; margin-top: 5px;" src="/assets/Images/n11346A.png?q=100">
+            <h6>Men</h6>
+          </a>
+        </div>
+     </div>
+ </div>
+
+ <div class="container">
+   <div class="row">
+     <ng-container *ngFor="let item of productList">
+      <div class="card col-md-3">
+        <img src="{{item.image}}" alt="">
+        <h5>{{item.name}}</h5>
+        <p><strong>Price:</strong>${{item.price}}</p>
+        <button class="btn btn-primary" (click)= addtocart(item)>Add to cart</button>
+      </div>
+     </ng-container>
+     
+   </div>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!---
+ <section>
+    <div class="spacer">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-9">
+            <div class="row shop-listing">
+              <div class="col-lg-4" *ngFor="let product of products">
+                <div class="card shop-hover border-0">
+                 <img [src]="'http://localhost:3000/' + product.image" alt="wrapkit" class="img-fluid" />
+                  <div class="card-img-overlay align-items-center">
+                    <button class="btn btn-md btn-info" (click)="_addItemToCart(product._id, 1)">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <h6>
+                    <a href="#" class="link">{{ product.name }}</a>
+                  </h6>
+                  <h6 class="subtitle">by Wisdom</h6>
+                  <h5 class="font-medium m-b-30">
+                    ${{product.price}}
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
